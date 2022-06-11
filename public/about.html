@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="skeleton.css">
+    <link rel="stylesheet" href="basic.css">
+    <title>About</title>
+</head>
+<body>
+    <header>
+        <div class="logoContainer">
+            <h1 class="logo">HOME</h1>
+        </div>
+        <div id="linksContainer">
+            <a href="/about.html">About</a>
+            <a href="/contact-me.html">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+            <p>About stuff here</p>
+        </div>
+        <img src="/doggo404.jpg"/>
+    </main>
+
+    <script>
+        let logo = document.querySelector('.logo');
+        let indexLink = document.createElement('a');
+        indexLink.href = '/';
+
+        logo.addEventListener('click', clickIndex);
+
+        function clickIndex() {
+            indexLink.click()
+        }
+    </script>
+</body>
+</html>
